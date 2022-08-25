@@ -14,10 +14,13 @@
   },
   "main": "background.js",
   "dependencies": {
+    "@popperjs/core": "^2.11.6",
     "@simonwep/pickr": "^1.8.2",
     "bootstrap": "^5.2.0",
     "core-js": "^3.8.3",
-    "vue": "^3.2.13"
+    "sharp": "^0.30.7",
+    "vue": "^3.2.13",
+    "vue-slider-component": "^4.1.0-beta.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

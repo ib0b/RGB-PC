@@ -31,18 +31,12 @@ async function createWindow() {
   })
   win.webContents.on('select-bluetooth-device', (event, deviceList, callback) => {
     event.preventDefault()
-    console.log('deviceList', deviceList)
-    win.webContents.send("deviceList", deviceList);
     listeners.deviceSelected = callback
+    win.webContents.send("deviceList", deviceList);
 
-
-    // if (deviceList && deviceList.length > 0) {
-    //   callback(deviceList[0])
-    // }
   })
   ipcMain.on('deviceSelected', (event, deviceId) => {
-    listeners.deviceSelected(deviceId); //reference to callback of win.webContents.on('select-bluetooth-device'...)
-    console.log("Device selected, discovery finished");
+    listeners.deviceSelected(deviceId); //reference to callback of win.webContents.on('select-bluetooth-device'...)   
   })
 
   if (process.env.WEBPACK_DEV_SERVER_URL) {
