@@ -7,12 +7,13 @@
    
    
     <div class="help">
-      <p>This software has been tested on H619E, your mileage may vary. This is not the offical control software and is no way associated with Govee. This software provided as is with no gurantees and using it may void your warranty, please proceed with caution.
+      <p>This software has been tested on H619E, your mileage may vary. This is not the offical control software and is no way associated with Govee. This software is provided as is with no gurantees and using it may void your warranty, please proceed with caution.
          <ul>
             <li>This software requires bluetooth connectivity and your PC should be in close range with the strip controller.</li>
             <li>Click scan to connect to your LED strip.</li>
-            <li>Note that the LED strip controller can only connect to one device via Bluetooth. You may have to turn off bluetooth on your phone so as to make the controller discoverable.</li>
+            <li>Note that the LED strip controller can only connect to one device via Bluetooth. You may have to turn off bluetooth on your phone so as to disconnect you phone from the led controller and make the controller discoverable on PC.</li>
          </ul>
+         <button @click="openHelp" class="float-end btn btn-dark">Help</button>
       </p>
     </div>
     <button @click="scan" class="btn btn-danger">SCAN</button>
@@ -52,7 +53,7 @@ import state from "./state";
 
 //import ipcrender
 const ipcRenderer = require("electron").ipcRenderer;
-
+const shell = require("electron").shell;
 window.ipcRenderer = ipcRenderer;
 
 export default {
@@ -71,6 +72,9 @@ export default {
     };
   },
   methods: {
+    openHelp() {
+      shell.openExternal("https://github.com/ib0b/RGB-PC");
+    },
     async connect(device) {
       if (this.connected) return;
       state.device = device;

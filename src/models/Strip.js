@@ -151,7 +151,7 @@ class Strip {
             } catch (ex) {
                 console.warn(ex)
             }
-            await sleep(400) //looks like controller cant handle many requets per second, the commands are queued at the controller making it have delay.
+            await sleep(500) //looks like controller cant handle many requets per second, the commands are queued at the controller making it have delay.
         }
 
     }

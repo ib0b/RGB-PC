@@ -1,12 +1,14 @@
 {
   "name": "rgb",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "description": "RGB-PC is a LED client for PC for Govee lights",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "electron:build": "vue-cli-service electron:build",
+    "publish": "vue-cli-service electron:build",
     "electron:serve": "vue-cli-service electron:serve",
     "start": "vue-cli-service electron:serve",
     "postinstall": "electron-builder install-app-deps",
