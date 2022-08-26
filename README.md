@@ -7,10 +7,12 @@ RGB-PC is a bluetooth based client for Govee LED strips. This is based on revers
 ### Features
 
 - [x] Keep alive
+- [x] On/Off toggle
 - [x] Change Color
 - [x] Set global brightness
 - [x] Music Modes
 - [x] Change Scenes
+- [x] Send Custom Command
 - [x] Sync Colors to your display border,each segement with different focus area. <em>~Experimental</em>
 
 ---
