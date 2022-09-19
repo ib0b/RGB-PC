@@ -4,6 +4,8 @@
 
 RGB-PC is a bluetooth based client for Govee LED strips. This is based on reverse engineering the requests from android and translating them to PC. Thanks to [BeauJBurroughs/Govee-H6127-Reverse-Engineering](https://github.com/BeauJBurroughs/Govee-H6127-Reverse-Engineering) and [egold555/Govee-Reverse-Engineering](https://github.com/egold555/Govee-Reverse-Engineering)
 
+<img width="1116" alt="image" src="https://user-images.githubusercontent.com/18010106/191063691-08d27f1a-8714-44f3-9e35-912833e3f391.png">
+
 ### Features
 
 - [x] Keep alive
@@ -68,6 +70,6 @@ Please check known issues first and create an issue with reproduceable steps.
 ## Reverse Engineering
 
 You can capture the bluetooth traffic from your android device and old one works best (Android 4.4 - 6.0) and the view the logs using Wireshark
-See this links for more information
-[Link 1 ](https://www.nowsecure.com/blog/2017/02/07/bluetooth-packet-capture-on-android-4-4/)
-[Link 2 ](https://support.honeywellaidc.com/s/article/How-to-capture-Bluetooth-traffic-from-and-to-an-Android-Device)
+See these links for more information:
+- [How to capture Bluetooth packets on Android 4.4](https://www.nowsecure.com/blog/2017/02/07/bluetooth-packet-capture-on-android-4-4/)
+- [How to capture Bluetooth traffic from and to an Android Device?](https://support.honeywellaidc.com/s/article/How-to-capture-Bluetooth-traffic-from-and-to-an-Android-Device)
